@@ -45,7 +45,7 @@ fig, ax = plt.subplots(figsize=(8,6))
 plt.scatter(x=data_D.index.values,
         y=data_D['HPCP'])
 plt.title("Scatter graph of daily preciptation")
-#plt.show()
+plt.show()
 
 # draw plot of monthly average precipitation
 data_m = data_2005.resample("M").mean()
@@ -53,7 +53,7 @@ data_m = data_2005.resample("M").mean()
 fig, ax = plt.subplots(figsize=(8,6))
 ax.plot(data_m.index.values, data_m['HPCP'])
 ax.set_title("Monthly Average Precipitation for year 2005")
-#plt.show()
+plt.show()
 
 
 
